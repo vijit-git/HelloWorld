@@ -1,5 +1,5 @@
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.3  0.3 159860  9160 ?        Ss   23:24   0:02 /sbin/init splash
+root         1  0.2  0.3 159860  9160 ?        Ss   23:24   0:02 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    23:24   0:00 [kthreadd]
 root         3  0.0  0.0      0     0 ?        I    23:24   0:00 [kworker/0:0]
 root         4  0.0  0.0      0     0 ?        I<   23:24   0:00 [kworker/0:0H]
@@ -61,7 +61,7 @@ root       176  0.0  0.0      0     0 ?        S    23:24   0:00 [i915/signal:2]
 root       196  0.0  0.0      0     0 ?        S    23:24   0:00 [jbd2/sda5-8]
 root       197  0.0  0.0      0     0 ?        I<   23:24   0:00 [ext4-rsv-conver]
 root       199  0.0  0.0      0     0 ?        I<   23:24   0:00 [kworker/1:1H]
-root       233  0.1  0.9 119724 29464 ?        S<s  23:24   0:00 /lib/systemd/systemd-journald
+root       233  0.0  0.9 119724 29464 ?        S<s  23:24   0:00 /lib/systemd/systemd-journald
 root       261  0.0  0.0      0     0 ?        S<   23:24   0:00 [loop0]
 root       263  0.0  0.0      0     0 ?        S<   23:24   0:00 [loop1]
 root       265  0.0  0.0      0     0 ?        S<   23:24   0:00 [loop2]
@@ -101,13 +101,13 @@ ntp        776  0.0  0.1 111628  4556 ?        Ssl  23:24   0:00 /usr/sbin/ntpd 
 root       783  0.0  0.1  72296  5732 ?        Ss   23:24   0:00 /usr/sbin/sshd -D
 root       791  0.0  0.2 308184  8112 ?        Ssl  23:24   0:00 /usr/sbin/gdm3
 root       805  0.0  0.2 261552  8092 ?        Sl   23:24   0:00 gdm-session-worker [pam/gdm-launch-environment]
-debian-+   811  0.5  1.5  96176 46172 ?        Ss   23:24   0:03 /usr/bin/tor --defaults-torrc /usr/share/tor/tor-service-defaults-torrc -f /etc/tor/torrc --RunAsDaemon 0
+debian-+   811  0.4  1.5  96176 46172 ?        Ss   23:24   0:03 /usr/bin/tor --defaults-torrc /usr/share/tor/tor-service-defaults-torrc -f /etc/tor/torrc --RunAsDaemon 0
 gdm        815  0.0  0.2  76900  8272 ?        Ss   23:24   0:00 /lib/systemd/systemd --user
 gdm        816  0.0  0.0 114008  2668 ?        S    23:24   0:00 (sd-pam)
 gdm        827  0.0  0.1 197796  5448 tty1     Ssl+ 23:24   0:00 /usr/lib/gdm3/gdm-wayland-session gnome-session --autostart /usr/share/gdm/greeter/autostart
 gdm        829  0.0  0.1  50268  4648 ?        Ss   23:24   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 gdm        831  0.0  0.5 567004 15248 tty1     Sl+  23:24   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
-gdm        839  0.7  3.8 3169872 118268 tty1   Sl+  23:24   0:05 /usr/bin/gnome-shell
+gdm        839  0.6  3.8 3169872 118280 tty1   Sl+  23:24   0:05 /usr/bin/gnome-shell
 root       846  0.0  0.2 322372  8944 ?        Ssl  23:24   0:00 /usr/lib/upower/upowerd
 gdm        869  0.0  1.8 414592 56256 tty1     Sl+  23:24   0:00 /usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6
 gdm        874  0.0  0.2 365592  8164 ?        Ssl  23:24   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
@@ -124,7 +124,7 @@ gdm        924  0.0  0.2 294488  8104 tty1     Sl   23:25   0:00 /usr/lib/ibus/i
 gdm        927  0.0  0.9 405080 29064 tty1     Sl   23:25   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
 gdm        929  0.0  0.2 292432  8056 ?        Sl   23:25   0:00 /usr/lib/ibus/ibus-portal
 root       947  0.0  0.3 315232  9156 ?        Ssl  23:25   0:00 /usr/lib/x86_64-linux-gnu/boltd
-root       948  2.2  1.2 457216 38048 ?        Ssl  23:25   0:15 /usr/lib/packagekit/packagekitd
+root       948  1.8  1.2 457216 38048 ?        Ssl  23:25   0:15 /usr/lib/packagekit/packagekitd
 gdm        951  0.0  0.9 553544 30096 tty1     Sl+  23:25   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
 gdm        954  0.0  0.2 294476  8196 tty1     Sl+  23:25   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
 gdm        955  0.0  0.9 404708 28420 tty1     Sl+  23:25   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
@@ -149,7 +149,7 @@ raju      1119  0.0  0.2  77032  8324 ?        Ss   23:25   0:00 /lib/systemd/sy
 raju      1120  0.0  0.0 114008  2672 ?        S    23:25   0:00 (sd-pam)
 raju      1133  0.0  0.2 288376  7444 ?        Sl   23:25   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
 raju      1139  0.0  0.2 212128  6072 tty2     Ssl+ 23:25   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
-raju      1141  1.9  2.1 394292 66104 tty2     Rl+  23:25   0:12 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+raju      1141  1.6  2.1 394100 65828 tty2     Sl+  23:25   0:12 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
 raju      1147  0.0  0.1  50796  5204 ?        Ss   23:25   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 raju      1150  0.0  0.5 643160 15852 tty2     Sl+  23:25   0:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
 raju      1250  0.0  0.0  11304   320 ?        Ss   23:25   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
@@ -158,9 +158,9 @@ raju      1258  0.0  0.2 432020  8040 ?        Sl   23:25   0:00 /usr/lib/gvfs/g
 raju      1266  0.0  0.2 367788  8828 ?        Ssl  23:25   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
 raju      1273  0.0  0.1  49928  4300 ?        S    23:25   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
 raju      1276  0.0  0.2 220740  7044 ?        Sl   23:25   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
-raju      1293  4.9  5.2 3245640 158756 tty2   Sl+  23:25   0:31 /usr/bin/gnome-shell
+raju      1293  4.2  5.2 3245620 157832 tty2   Sl+  23:25   0:33 /usr/bin/gnome-shell
 raju      1310  0.0  0.3 1172180 11808 ?       S<l  23:25   0:00 /usr/bin/pulseaudio --start --log-target=syslog
-raju      1325  0.2  0.3 377532  9660 tty2     Sl   23:25   0:01 ibus-daemon --xim --panel disable
+raju      1325  0.2  0.3 377532  9660 tty2     Sl   23:25   0:02 ibus-daemon --xim --panel disable
 raju      1329  0.0  0.2 296792  8472 tty2     Sl   23:25   0:00 /usr/lib/ibus/ibus-dconf
 raju      1331  0.0  0.7 356180 22372 tty2     Sl   23:25   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
 raju      1333  0.0  0.2 294596  8404 ?        Sl   23:25   0:00 /usr/lib/ibus/ibus-portal
@@ -195,19 +195,19 @@ raju      1481  0.0  0.4 508752 12880 tty2     Sl+  23:25   0:00 /usr/lib/gnome-
 raju      1523  0.0  0.2 271932  6296 tty2     Sl+  23:25   0:00 /usr/lib/gnome-disk-utility/gsd-disk-utility-notify
 raju      1524  0.2  1.7 1038692 54460 tty2    Sl+  23:25   0:01 nautilus-desktop
 raju      1553  0.0  0.3 384024 10024 ?        Sl   23:25   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
-raju      1561  0.1  2.2 894284 67640 ?        Ssl  23:25   0:00 /usr/lib/evolution/evolution-calendar-factory
+raju      1561  0.0  2.2 894284 67640 ?        Ssl  23:25   0:00 /usr/lib/evolution/evolution-calendar-factory
 raju      1577  0.0  0.2 220928  8324 tty2     Sl   23:25   0:00 /usr/lib/ibus/ibus-engine-simple
-raju      1597  0.1  2.0 1142728 62976 ?       Sl   23:25   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1561x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1561/2
+raju      1597  0.0  2.0 1142728 62976 ?       Sl   23:25   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1561x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1561/2
 raju      1611  0.0  0.8 734844 24536 ?        Ssl  23:25   0:00 /usr/lib/evolution/evolution-addressbook-factory
 raju      1620  0.0  0.8 950196 27020 ?        Sl   23:25   0:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx1611x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/1611/2
 root      1650  0.0  0.2  25660  6192 ?        S    23:26   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/dhclient-wlan0.pid -lf /var/lib/NetworkManager/dhclient-4053e4c9-1062-46e9-aa8a-51698a528975-wlan0.lease -cf /var/lib/NetworkManager/dhclient-wlan0.conf wlan0
-raju      1866  0.4  1.2 802760 37296 ?        Ssl  23:26   0:02 /usr/lib/gnome-terminal/gnome-terminal-server
+raju      1866  0.4  1.2 802760 37296 ?        Ssl  23:26   0:03 /usr/lib/gnome-terminal/gnome-terminal-server
 raju      1886  0.0  0.1  29680  5048 pts/0    Ss   23:26   0:00 bash
-raju      1930  4.7  8.2 1950740 249728 tty2   Sl+  23:26   0:28 /usr/lib/firefox/firefox -new-window
-raju      2120  2.3  5.0 1592136 151960 tty2   Sl+  23:26   0:14 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 174768 -schedulerPrefs 0001,2 -parentBuildID 20181207224003 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1930 true tab
+raju      1930  3.9  8.2 1950740 250196 tty2   Sl+  23:26   0:29 /usr/lib/firefox/firefox -new-window
+raju      2120  1.9  5.0 1591868 151836 tty2   Sl+  23:26   0:14 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 174768 -schedulerPrefs 0001,2 -parentBuildID 20181207224003 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1930 true tab
 raju      2161  0.0  2.6 1497292 80640 tty2    Sl+  23:26   0:00 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 83 -prefMapSize 174768 -schedulerPrefs 0001,2 -parentBuildID 20181207224003 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1930 true tab
 raju      2187  0.4  3.4 1524164 104436 tty2   Sl+  23:26   0:02 /usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 177 -prefMapSize 174768 -schedulerPrefs 0001,2 -parentBuildID 20181207224003 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1930 true tab
-raju      2255  1.0  4.8 1250732 148408 tty2   SLl+ 23:26   0:06 /usr/bin/gnome-software --gapplication-service
+raju      2255  0.8  4.8 1250732 148408 tty2   SLl+ 23:26   0:06 /usr/bin/gnome-software --gapplication-service
 raju      2257  0.0  0.8 601812 26492 tty2     Sl+  23:26   0:00 update-notifier
 raju      2264  0.0  0.0      0     0 tty2     Z+   23:26   0:00 [livepatch-notif] <defunct>
 root      2276  0.0  0.6 560476 19924 ?        Ssl  23:26   0:00 /usr/lib/fwupd/fwupd
@@ -219,5 +219,5 @@ root      2463  0.0  0.0 193636  2684 ?        S    23:28   0:00 (sd-pam)
 root      2474  0.0  0.1  28680  4140 pts/0    S    23:28   0:00 bash
 root      2655  0.0  0.2 107680  8120 ?        Ss   23:29   0:00 /usr/sbin/cupsd -l
 root      2657  0.0  0.3 303652 11028 ?        Ssl  23:29   0:00 /usr/sbin/cups-browsed
-root      2866  0.0  0.0      0     0 ?        I    23:35   0:00 [kworker/u4:3]
-root      2891  0.0  0.1  44472  3436 pts/0    R+   23:36   0:00 ps aux
+root      2866  0.0  0.0      0     0 ?        D    23:35   0:00 [kworker/u4:3]
+root      2917  0.0  0.1  44472  3472 pts/0    R+   23:38   0:00 ps aux
